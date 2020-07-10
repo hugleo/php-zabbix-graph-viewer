@@ -1,0 +1,62 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "8ae0c72288a16a4b2eee28a737bea25c",
+    "packages": [
+        {
+            "name": "confirm-it-solutions/php-zabbix-api",
+            "version": "v2.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/confirm/PhpZabbixApi.git",
+                "reference": "bd0d71af6c4493b969b53d1c47646fc00ccf6d14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/confirm/PhpZabbixApi/zipball/bd0d71af6c4493b969b53d1c47646fc00ccf6d14",
+                "reference": "bd0d71af6c4493b969b53d1c47646fc00ccf6d14",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "build/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dominique Barton",
+                    "email": "phpzabbixapi@confirm.ch",
+                    "homepage": "http://www.confirm.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PhpZabbixApi library",
+            "homepage": "http://github.com/confirm-it-solutions/PhpZabbixApi",
+            "keywords": [
+                "api",
+                "zabbix"
+            ],
+            "time": "2018-06-25T19:33:04+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}
