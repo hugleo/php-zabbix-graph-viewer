@@ -2,10 +2,11 @@ const zabbixUrl = '/zabbix';
 
 function generateUrl() {
     graphId = $("#graphid").val();
+    hostId = $("#hostid").val();
     var url = '';
     if (graphId) {
         url = zabbixUrl + '/zabbix.php';
-        var obj = { view_as: 'showgraph', action: 'charts.view', filter_search_type: '0', 'filter_graphids[]': graphId };
+        var obj = { view_as: 'showgraph', action: 'charts.view', filter_search_type: 0, 'filter_hostids[]': hostId, 'filter_graphids[]': graphId, filter_set: 1 };
         url = url + '?' + $.param(obj);
     }
     return url;
