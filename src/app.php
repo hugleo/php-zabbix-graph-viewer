@@ -8,6 +8,10 @@
     $hostgroup = '';
     $hostname = '';
     $graphname = '';
+  
+    $decoded = base64_decode($_COOKIE['zbx_session']);
+    $ar = json_decode($decoded, true);    
+    $zbx_sessionid = $ar['sessionid'];    
 
     foreach ($_GET as $key => $value) {
         if ($key == 'hostgroup') {
@@ -22,7 +26,7 @@
 		}
     }
 
-    $api = new ZabbixApi($zabbixUrl . '/api_jsonrpc.php', '', '', '', '', $_COOKIE['zbx_sessionid']);
+    $api = new ZabbixApi($zabbixUrl . '/api_jsonrpc.php', '', '', '', '', $zbx_sessionid);
     $api->setDefaultParams(array(
         'output' => 'extend',
         'real_hosts' => 'true'
